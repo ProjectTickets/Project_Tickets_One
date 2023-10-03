@@ -1,0 +1,187 @@
+body {
+    background-color: black;
+    /*TIRAR O SCROLL*/
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+
+    background: linear-gradient(-230deg, #000 30%, rgba(0, 0, 0, 0) 65%) no-repeat;
+
+}
+
+main .personagem {
+    display: none; 
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+
+main .personagem .imagem {
+    width: 100%; 
+    height: 100%;
+    
+    /*Serve para dimensionar na tela do usuário!*/
+
+    object-fit: cover;
+}
+
+ .conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px; 
+    display: flex;
+
+    /*Pesquisar sobre o flex-direct*/
+
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;  
+    z-index: 1;  
+
+}
+
+ .conteudo .nome-personagem {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Croissant One";
+    font-weight: 200;
+    margin-bottom: 20px;
+
+}
+
+ .conteudo .descricao {
+    color: #ffffff;
+    font-family: "Covered By Your Grace";
+    line-height: 24px;
+}
+
+ .conteudo .logoSelecionado {
+    background-image: url("../imagens/pexels-LOGO3-thisisengineering-3861969.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    /*espaçamento entre a imagem e o titulo*/
+    margin-bottom: 35px;
+    border-radius: 50%;
+
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ffffff
+}
+
+.conteudo .logo1 {
+    background-image: url("../imagens/pexels-hygor-sakai-2311713.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    /*espaçamento entre a imagem e o titulo*/
+    margin-bottom: 35px;
+    border-radius: 50%;
+
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ffffff
+}
+
+.conteudo .logo2 {
+    background-image: url("../imagens/maos-yes.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    /*espaçamento entre a imagem e o titulo*/
+    margin-bottom: 35px;
+    border-radius: 50%;
+
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ffffff
+}
+
+.conteudo .logo4 {
+    background-image: url("../imagens/extase\ comprimido.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    /*espaçamento entre a imagem e o titulo*/
+    margin-bottom: 35px;
+    border-radius: 50%;
+
+    transform: scale(1);
+    box-shadow: 0 0 20px #ffffff
+}
+
+.conteudo .logo5 {
+    background-image: url("../imagens/pexels-washarapol-d-binyo-jundang-2731667.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    /*espaçamento entre a imagem e o titulo*/
+    margin-bottom: 35px;
+    border-radius: 50%;
+
+    transform: scale(1);
+    box-shadow: 0 0 20px #ffffff
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3)
+    /*margem sobre os botoes*/
+}
+
+.botoes .botao {
+    border: none;
+    background: none; 
+
+    /*para aparecer a mão de clicar*/
+
+    cursor: pointer;
+    border-radius: 90%;
+    height: 50px;
+    width: 50px;
+
+}
+
+.botoes .botao img {
+    /*formato do botão*/
+    border-radius: 90%;
+    /*espaçamento entre os botões*/
+    margin-bottom: 15px;
+    /*taanho do botão*/
+    height: 50px;
+    width: 50px;
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #ffffff;
+
+
+}
+
+
+
+
+
+
+
+
+
+
